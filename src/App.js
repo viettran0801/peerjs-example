@@ -56,7 +56,7 @@ function App() {
       <input type="text" value={remotePeerIdValue} onChange={e => setRemotePeerIdValue(e.target.value)} />
       <button onClick={() => call(remotePeerIdValue)}>Call</button>
       <div>
-        <video ref={currentUserVideoRef} />
+        <video ref={currentUserVideoRef} muted="muted"/>
       </div>
       <div>
         <video ref={remoteVideoRef} />
